@@ -12,6 +12,7 @@
     --gray-200: #e2e8f0;
     --gray-400: #94a3b8;
     --white: #fff;
+    --light-purple: #9f67ff;
 
 }
 
@@ -104,6 +105,12 @@ main {
     color: var(--white);
 }
 
+.login button:hover {
+    background: var(--light-purple);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 .login > p {
     color: var(--gray-600);
 }
@@ -125,7 +132,7 @@ main {
         background: none;
         justify-content: flex-start;
         margin:2.5rem 7rem 7rem;
-        height: fit-content;
+        height: fit-content;    
 
     }
 
@@ -141,10 +148,22 @@ main {
 
     .conteudo {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .bg-desktop {
         display: block;
         width: 100%;
+    }
+
+    .descricao h1 {
+        font-size: 2.5rem;
+
+    }
+    
+    .descricao p {
+        font-size: 1rem;
     }
 }
